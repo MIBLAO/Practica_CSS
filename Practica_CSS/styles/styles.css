@@ -1,0 +1,306 @@
+:root{
+    --colorPrimario: #0A3ACA;
+    --colorSecundario: #C8CBD3;
+    --colorTerciario: #062C92;
+    --cuartoColor: #616980;
+    --fuentePrimaria: 'Gudea', sans-serif;
+    --fuenteSecundaria: 'Mulish', sans-serif;
+}
+body{
+    background-color: #E3E7F2;
+}
+h1, h2{
+    font-family: var(--fuentePrimaria);
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--colorTerciario);
+    
+}
+h3{
+    font-family: var(--fuentePrimaria);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--colorTerciario);
+}
+a,p{
+    font-family: var(--fuenteSecundaria);
+    font-size: 20px;
+    color: var(--cuartoColor);
+}
+
+.barra_navegacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links{
+    padding: 1rem;
+    text-decoration: none;
+}
+.links:hover{
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+}
+.seccion2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.espacioGrafico{
+    grid-column: 2/3;
+    width: auto;
+    height: 50rem;
+    background-color: var(--colorPrimario);
+    position: relative;
+   
+}
+.imgEnfermera{
+    height: 100%;
+    position: absolute;
+    transform: translate(-20%,0%);
+}
+
+.tituloContenido{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--colorTerciario);
+    
+}
+.titulo{
+    margin-top: 10rem;
+    margin-right: auto;
+    width: 90%;
+    
+}
+.contenidoTexto{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+.contenedorIconos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.divIconos{
+    display: flex;
+    align-items: center;
+}
+.iconos{
+    width: 20px;
+    margin-right: 10px;
+    background-color:#F0F1A7;
+}
+
+.vacunas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.logosVacunas{
+    width: 20%;
+    opacity: .1;
+    filter: url("data:image/svg xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10 */
+    filter: gray; 
+    -webkit-filter: grayscale(100%); 
+    -webkit-transition: all 1.5s ease; 
+    -moz-transition: all 1.5s ease;
+    -webkit-backface-visibility: hidden; 
+   
+}
+.agendaVacuna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon{
+    background-color: #ccced4;
+    
+}
+.cuadroAgenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.iconoAgenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    
+}
+.botonAgenda{
+    background-color: var(--colorPrimario);
+    color: var(--colorSecundario);
+    padding: 5px;
+}
+.beneficios{
+    font-size: 25px;
+    color: var(--colorTerciario);
+}
+.textoBeneficiosVacuna{
+    width: 50rem;
+    margin-left: 15rem;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    color: var(--colorSecundario);
+}
+.beneficiosVacuna{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    column-gap: 20px;
+    
+}
+.gridPreparaciones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6, 12rem);
+    margin-top: 10rem;
+    margin-right: 10rem;
+    column-gap: 10rem;
+}
+.preparacionesVacuna{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+.preparacionesVacuna__contenido{
+    display: flex;
+    align-items: center;
+}
+.preparacionesVacuna__estres{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.estres{
+    display: flex;
+}
+.estresContenido{
+    width: 30rem;
+}
+.estresContenido__titulo{
+    margin-top: 0px;
+}
+.mujerCubrebocas{
+    background-color: var(--colorPrimario);
+    grid-column: 1/2;
+    grid-row: 1/7;
+}
+.mujerCubrebocas__img{
+    height: 60rem;
+    position: relative;
+    transform: translate(0%, 20%);
+}
+.preparacionesTitulos{
+    font-size: 30px;
+}
+.contactosEmergencia{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 4rem;
+}
+.textoContactosEmergencia{
+    grid-column: 1/5;
+    padding-left: 10rem;
+    padding-right: 45rem;
+}
+.numerosEmergencia{
+    font-size: 13px;
+}
+
+.cajasContactosEmergencia{
+    display: flex;
+    align-items: center;
+    
+}
+
+.cajaNumeroEmergencia{
+    margin-left: 1rem;
+}
+.botonContactoEmergencia{
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.5rem;
+}
+
+.cajaMedioContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    border-style: outset;
+    border-radius: 1.5rem;
+    border-width: 5px;
+    border-color: var(--colorPrimario);
+}
+.videoLlamada{
+    grid-row: 3/4;
+}
+.mensaje{
+    grid-row: 3/4;
+}
+.divImagenDoctor{
+    grid-column:3/5;
+    grid-row: 2/4;
+
+}
+.imagenDoctor{
+    width: 100%;
+}
+.seccionPiePagina{
+    background-color: var(--cuartoColor);
+}
+.divPoliticas{
+    display: flex;
+    justify-content: space-between;
+    margin-left:2rem;
+    margin-right: 2rem;
+}
+.linkTerminos{
+    margin-right: 1rem;
+}
+.textoYDatos{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.textoPiePagina{
+    width: 15rem;
+}
+.linksDatos{
+    display: flex;
+}
+.colDatos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.linkColumna{
+    margin-bottom: 2rem;
+}
+.colorTextoPiePagina{
+    color: var(--colorSecundario);
+}
+
+
